@@ -15,7 +15,7 @@ while true; do
     else
         if $miner_was_running; then
             echo "Mining stop, OC reset"
-            nvtool --setclocks 0 --setcoreoffset 0 --setmem 0 --setmemoffset 0
+            nvtool --setclocks 0 --setcoreoffset 0 --setmem 0 --setmemoffset 0 --setpl 0
             miner_was_running=false
         else
             echo "Mining stop"
